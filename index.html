@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    <meta charset="UTF-8">
+    <meta lang="pt-br">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Acadêmico - Usuarios</title>
+    <link rel="stylesheet" type="text/css" href="CSS/estilos.css">
+    <link rel="icon" type="image/icon" href="img/favicon.ico">
+    <!--Google Fonts-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    </head>
+    <body>
+        <header>
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">Sistema Acadêmico</a>
+                </div>
+            </div>
+        </div>
+        <div class=""></div>
+        </header>
+        <main>
+            <div class="span2">
+                <h4>Sistema Administrativo</h4>
+                <form action="/administrativo/usuarios/login" class="well" id="UsuarioLoginForm" method="post" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST"/></div><div class="input text required"><label for="UsuarioLogin">Login (nome.sobrenome)</label><input name="data[Usuario][login]" class="span12" maxlength="100" type="text" id="UsuarioLogin"/></div><div class="input password"><label for="UsuarioSenha">Senha</label><input name="data[Usuario][senha]" class="span12" type="password" id="UsuarioSenha"/></div><p><a href="/administrativo/usuarios/recuperar_senha" target="_blank">Esqueceu sua senha?</a></p><div class="submit"><input  class="btn btn-primary" type="submit" value="Entrar"/></div></form> 
+            </div>
+            <div class="span3">
+                <h4>Acesso Estudante / Responsável</h4>
+                <p>
+                    <a class="btn btn-success btn-large" href="https://academico.ifms.edu.br/">Área do Estudante</a>
+                </p>
+                <br/>
+                <br/>
+                <p><strong>Acompanhe o desenvolvimento do Sistema Acadêmico</strong></p>
+                <p>
+                    <a class="btn btn-info btn-large" href="https://docs.google.com/spreadsheets/d/1n95tk-dkWqp6bwjHj3lc3w3LupDT_iEOV-5cM2bS_rw" target="_blank">Acompanhe a Planilha</a>
+                </p>
+            </div>
+        </main>
+        <footer>
+            <p><small>Última atualização em: 17/12/2024 às 17:52:13 (Versão: 1.4) - ver <a href="https://docs.google.com/document/d/e/2PACX-1vS-045YRj02AowLWhwWwedJEnLfISxbNF0xUmEowLSPOhVL8G5Wjwt500wjYk-apqIOTJHSRdZwVcnv/pub">Nota de lançamento</a></small></p>
+        </footer>
+    </body>
+</html>
